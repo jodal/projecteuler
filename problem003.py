@@ -1,4 +1,4 @@
-from problem7 import bruteforce_prime
+from eulerlib import bruteforce_prime
 
 def problem3(n):
     for prime in bruteforce_prime():

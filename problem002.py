@@ -1,11 +1,7 @@
-def fib(max):
-    a, b = 0, 1
-    while b < max:
-        yield b
-	a, b = b, a + b
+from eulerlib import fibonacci
 
 def problem2(max):
-    return sum([i for i in fib(max) if i % 2 == 0])
+    return sum([i for i in fibonacci(max) if i % 2 == 0])
 
 if __name__ == '__main__':
     print problem2(4000000)

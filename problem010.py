@@ -1,4 +1,4 @@
-from problem7 import sieve_prime
+from eulerlib import sieve_prime
 
 def problem10(max):
     prime_sum = 0

@@ -1,8 +1,4 @@
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
+from eulerlib import factorial
 
 def problem191(n):
     num_possible_combinations = 3 ** n
