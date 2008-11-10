@@ -40,3 +40,9 @@ def infinite_range(start=0, step=1):
     while True:
         yield x
         x += step
+
+def ncr(n, r):
+    return factorial(n) / (factorial(r) * factorial(n - r))
+
+if __name__ == '__main__':
+    assert ncr(23, 10) == 1144066
