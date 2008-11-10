@@ -44,5 +44,10 @@ def infinite_range(start=0, step=1):
 def ncr(n, r):
     return factorial(n) / (factorial(r) * factorial(n - r))
 
+def is_palindromic(n):
+    return n == int(str(n)[::-1])
+
 if __name__ == '__main__':
     assert ncr(23, 10) == 1144066
+    assert is_palindromic(121) == True
+    assert is_palindromic(122) == False
