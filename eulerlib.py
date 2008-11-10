@@ -34,3 +34,9 @@ def bruteforce_prime():
         if is_prime:
             yield i
         i += 2
+
+def infinite_range(start=0, step=1):
+    x = start
+    while True:
+        yield x
+        x += step
