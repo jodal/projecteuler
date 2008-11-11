@@ -47,6 +47,21 @@ def ncr(n, r):
 def is_palindromic(n):
     return n == int(str(n)[::-1])
 
+def triangle_numbers():
+    sum = 0
+    n = 1
+    while True:
+        sum += n
+        yield sum
+        n += 1
+
+def get_divisors(n):
+    divisors = []
+    for i in xrange(n, 0, -1):
+        if n % i == 0:
+            divisors.append(i)
+    return divisors
+
 if __name__ == '__main__':
     assert ncr(23, 10) == 1144066
     assert is_palindromic(121) == True
