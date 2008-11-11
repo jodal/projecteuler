@@ -1,5 +1,3 @@
-import math
-
 def problem009(sum):
     c_min = sum // 3
     for c in range(c_min, sum):
