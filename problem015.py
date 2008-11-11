@@ -1,5 +1,3 @@
-import math
-
 from eulerlib import ncr
 
 def problem015(n):
