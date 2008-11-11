@@ -13,14 +13,12 @@ def factorial(n):
         return n * factorial(n - 1)
 
 def sieve_prime(max=100000000):
-    candidates = range(max)
-    for candidate in candidates:
-        if candidate is None or candidate < 2:
-            continue
-        else:
-            yield candidate
-            for j in range(candidate, max, candidate):
-                candidates[j] = None
+    sieve = range(max + 1)
+    for i in xrange(2, max):
+        if sieve[i] is not None:
+            yield i
+            for j in xrange(i ** 2, max, i):
+                sieve[j] = None
 
 def bruteforce_prime():
     yield 2
