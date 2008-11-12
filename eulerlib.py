@@ -60,6 +60,12 @@ def get_divisors(n):
             divisors.append(i)
     return divisors
 
+def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
 if __name__ == '__main__':
     assert ncr(23, 10) == 1144066
     assert is_palindromic(121) == True
