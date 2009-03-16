@@ -1,3 +1,10 @@
+"""
+Work out the first ten digits of the sum of the following one-hundred 50-digit
+numbers.
+
+From http://projecteuler.net/index.php?section=problems&id=13
+"""
+
 def problem013(numbers):
     return str(sum(numbers))[:10]
 

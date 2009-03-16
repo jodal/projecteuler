@@ -1,9 +1,18 @@
+# coding: utf-8
+"""
+Find the unique positive integer whose square has the form 1_2_3_4_5_6_7_8_9_0,
+where each “_” is a single digit.
+
+From http://projecteuler.net/index.php?section=problems&id=206
+"""
+
 from __future__ import division
 import math
 import re
 
 def problem206(pattern):
-    # XXX: Takes about 14 min to complete, but it works
+    """XXX: Takes about 14 min to complete, but it works"""
+
     compiled = re.compile(r'^%s$' % pattern)
     min_value = 10 ** ((len(pattern) - 1) // 2)
     max_value = int(math.sqrt(2) * min_value)
